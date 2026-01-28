@@ -6,7 +6,6 @@ import { useAvailability } from '../hooks/useAvailability';
 import { useMatches } from '../hooks/useMatches';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
-import { Card, CardContent } from '../components/ui/card';
 import { Alert, AlertDescription } from '../components/ui/alert';
 import {
   Dialog,
