@@ -2,7 +2,7 @@ import { Star, CheckCircle2, Scale, TrendingUp, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { cn } from '../lib/utils';
-import type { EquipoBalanceado, Jugador } from '../../../shared/types';
+import type { Jugador } from '../../../shared/types';
 
 interface JugadorConPuntaje extends Jugador {
   puntajePromedio: number;

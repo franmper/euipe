@@ -288,7 +288,7 @@ export default function TeamGenerator() {
         <div className="lg:col-span-2">
           {equipos ? (
             <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-              <TeamDisplay equipos={equipos} />
+              <TeamDisplay equipos={equipos as any} />
             </div>
           ) : (
             <Card className="h-full border-dashed border-2 bg-muted/30 rounded-[2rem]">
