@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User, Calendar, Trash2, CheckCircle2, MoreVertical, ShieldCheck, ShieldAlert, Star, Trophy, X } from 'lucide-react';
+import { User, Calendar, Trash2, ShieldCheck, ShieldAlert, Star, Trophy, X } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
@@ -65,9 +65,9 @@ export default function PlayerList({
       </div>
 
       <div className="grid grid-cols-1 gap-3">
-            {jugadores.map((jugador, index) => {
-              const estaDisponible = disponibilidad.get(jugador.id) || false;
-              const stats = getPlayerStats?.(jugador.id) || { matchesPlayed: 0, avgPoints: 0 };
+        {jugadores.map((jugador) => {
+          const estaDisponible = disponibilidad.get(jugador.id) || false;
+          const stats = getPlayerStats?.(jugador.id) || { matchesPlayed: 0, avgPoints: 0 };
 
               return (
                 <Card

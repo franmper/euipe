@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, Plus, AlertCircle, Loader2, UserPlus, Search, Trophy, Calendar, CheckCircle2 } from 'lucide-react';
+import { AlertCircle, Loader2, UserPlus, Search, CheckCircle2, Calendar } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { usePlayers } from '../hooks/usePlayers';
 import { useAvailability } from '../hooks/useAvailability';
@@ -7,7 +7,6 @@ import { useMatches } from '../hooks/useMatches';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Card, CardContent } from '../components/ui/card';
-import { Alert, AlertDescription } from '../components/ui/alert';
 import {
   Dialog,
   DialogContent,

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Users, Trophy, AlertCircle, Loader2, Settings2, Sparkles, ChevronRight, Scale, Star, UserPlus, Calendar, CheckCircle2 } from 'lucide-react';
+import { AlertCircle, Loader2, Settings2, Sparkles, Scale, UserPlus, Calendar, CheckCircle2 } from 'lucide-react';
 import { usePlayers } from '../hooks/usePlayers';
 import { useAvailability } from '../hooks/useAvailability';
 import { useMatches } from '../hooks/useMatches';

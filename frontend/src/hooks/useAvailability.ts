@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
-import type { Disponibilidad } from '../../../shared/types';
 
 export function useAvailability() {
   const [disponibilidad, setDisponibilidad] = useState<Map<string, boolean>>(new Map());

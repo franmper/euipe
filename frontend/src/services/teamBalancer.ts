@@ -8,7 +8,7 @@ interface JugadorConPuntaje extends Jugador {
  * Calcula el puntaje promedio de un jugador basado en sus participaciones
  */
 export function calcularPuntajePromedio(
-  jugador: Jugador,
+  _jugador: Jugador,
   participaciones: Array<{ puntaje: number }>
 ): number {
   if (participaciones.length === 0) {

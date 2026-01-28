@@ -1,11 +1,25 @@
-import { Star, CheckCircle2, AlertTriangle, Scale, TrendingUp, Users } from 'lucide-react';
+import { Star, CheckCircle2, Scale, TrendingUp, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { cn } from '../lib/utils';
-import type { EquipoBalanceado } from '../../../shared/types';
+import type { EquipoBalanceado, Jugador } from '../../../shared/types';
+
+interface JugadorConPuntaje extends Jugador {
+  puntajePromedio: number;
+}
 
 interface TeamDisplayProps {
-  equipos: EquipoBalanceado;
+  equipos: {
+    equipoA: {
+      jugadores: JugadorConPuntaje[];
+      puntajeTotal: number;
+    };
+    equipoB: {
+      jugadores: JugadorConPuntaje[];
+      puntajeTotal: number;
+    };
+    diferencia: number;
+  };
 }
 
 export default function TeamDisplay({ equipos }: TeamDisplayProps) {
